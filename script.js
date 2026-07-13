@@ -7,8 +7,8 @@ function register() {
     localStorage.setItem("name", document.getElementById("name").value)
     localStorage.setItem("email", document.getElementById("email").value)
     localStorage.setItem("pass", document.getElementById("pass").value)
-    alert(String("Ola, ") + String(localStorage.getItem("name"))+ String(" seja bem vindo"))
+    alert(String("welcome, ") + String(localStorage.getItem("name")))
 }
 function atualizartexto() {
-    document.getElementById("boasvindas").innerText = String("seja bem vindo: " + localStorage.getItem("name"))
+    document.getElementById("WelcomeMessage").innerText = String("welcome: " + localStorage.getItem("name"))
 }
