@@ -1,7 +1,8 @@
 function login() {
-    console.log(String("usuario logado com o email ") + String(document.getElementById("email").value))
+    if (document.getElementById("email").value == localStorage.getItem("email") && document.getElementById("pass").value == localStorage.getItem("pass")) {
+        
+    }
 }
-
 function register() {
     localStorage.setItem("name", document.getElementById("name").value)
     localStorage.setItem("email", document.getElementById("email").value)
