@@ -3,5 +3,8 @@ function login() {
 }
 
 function register() {
-    
+    localStorage.setItem("name", document.getElementById("name").value)
+    localStorage.setItem("email", document.getElementById("email").value)
+    localStorage.setItem("pass", document.getElementById("pass").value)
+    alert(String("Ola, ") + String(localStorage.getItem("name"))+ String(" seja bem vindo"))
 }
