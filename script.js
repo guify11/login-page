@@ -20,6 +20,9 @@ function atualizartexto() {
         else if (window.name == "index") {
             document.getElementById("greatings").innerText = "welcome"
             document.getElementById("log-in").innerText = "log-in"
+            document.getElementById("log-inText").innerText = "log-in"
+            document.getElementById("register").innerText = "register"
+            document.getElementById("languages").innerText = "Languages"
         }
         else if (window.name == "register") {
             document.getElementById("greatings").innerText = "welcome"
@@ -35,8 +38,11 @@ function atualizartexto() {
            document.getElementById("WelcomeMessage").innerText = String("seja Bem-vindo: " + localStorage.getItem("name")) 
         }
         else if (window.name == "index") {
+            document.getElementById("languages").innerText = "Outras linguas"
+            document.getElementById("log-inText").innerText = "entar"
             document.getElementById("greatings").innerText = "Bem-vindo"
             document.getElementById("log-in").innerText = "entar"
+            document.getElementById("register").innerText = "registrar"
         }
         else if (window.name == "register") {
             document.getElementById("greatings").innerText = "bem-vindo"
