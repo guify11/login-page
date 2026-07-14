@@ -26,6 +26,9 @@ function atualizartexto() {
             document.getElementById("register").innerText = "register: "
             document.getElementById("registerButt").innerText = "register"
         }
+        else if (window.name == "languague"){
+            document.getElementById("home").innerText = "Back to the home page"
+        }
     }
     if (localStorage.getItem("lang") == "pt"){
         if (window.name == "start"){
@@ -40,6 +43,9 @@ function atualizartexto() {
             document.getElementById("register").innerText = "registrar a sua conta: "
             document.getElementById("registerButt").innerText = "registrar"
         }
+        else if (window.name == "languague"){
+            document.getElementById("home").innerText = "voltar para a pagina inicial"
+        }
     }
     
 }
@@ -47,4 +53,5 @@ function atualizartexto() {
 function chancheLang(Lang) {
     localStorage.setItem("lang", Lang)
     console.log(String("language change to ") + String(Lang))
+    atualizartexto()
 }
