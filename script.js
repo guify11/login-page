@@ -27,6 +27,20 @@ function atualizartexto() {
             document.getElementById("registerButt").innerText = "register"
         }
     }
+    if (localStorage.getItem("lang") == "pt"){
+        if (window.name == "start"){
+           document.getElementById("WelcomeMessage").innerText = String("seja Bem-vindo: " + localStorage.getItem("name")) 
+        }
+        else if (window.name == "index") {
+            document.getElementById("greatings").innerText = "Bem-vindo"
+            document.getElementById("log-in").innerText = "entar"
+        }
+        else if (window.name == "register") {
+            document.getElementById("greatings").innerText = "bem-vindo"
+            document.getElementById("register").innerText = "registrar a sua conta: "
+            document.getElementById("registerButt").innerText = "registrar"
+        }
+    }
     
 }
 
